@@ -1,0 +1,7 @@
+Django<1.6
+South==0.7.6
+Unipath==0.2.1
+django-devserver==0.5.0
+django-extensions==1.1.1
+django-nose==1.1
+requests==1.2.0
