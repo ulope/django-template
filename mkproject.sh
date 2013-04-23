@@ -28,6 +28,6 @@ chmod +x manage.py
 
 find . -type f -name ".keep" | xargs rm
 rm mkproject.sh
-rm README
+rm README.rst
 
 echo -e "Done.\nYour project is located in $(pwd)"
