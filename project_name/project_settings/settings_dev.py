@@ -1,3 +1,5 @@
+import os
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -16,14 +18,7 @@ INSTALLED_APPS = (
     'devserver',
 )
 
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
-NOSE_ARGS = [
-    '--with-coverage',
-    '--cover-package=',
-    '--logging-clear-handlers',
-]
-
-LOG_FILE = '~/Library/Logs/django/{{ project_name }}.log'
+LOG_FILE = os.path.expanduser('~/Library/Logs/django/{{ project_name }}.log')
 
 LOGGING = {
     'handlers': {

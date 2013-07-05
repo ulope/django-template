@@ -23,16 +23,16 @@ DATABASES = {
     }
 }
 
-# CACHES = {
-#     'default': {
-#         'BACKEND': 'redis_cache.RedisCache',
-#         'LOCATION': 'localhost:6379',
-#         'KEY_PREFIX': '{{ project_name }}',
-#         'OPTIONS': {
-#             'DB': 0,
-#         }
-#     }
-# }
+CACHES = {
+    'default': {
+        'BACKEND': 'redis_cache.RedisCache',
+        'LOCATION': 'localhost:6379',
+        'KEY_PREFIX': '{{ project_name }}',
+        'OPTIONS': {
+            'DB': 0,
+        }
+    }
+}
 
 EMAIL_HOST = "localhost"
 
@@ -59,6 +59,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     SITE_ROOT.child("web"),
 )
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
