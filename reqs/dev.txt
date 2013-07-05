@@ -1,2 +1,2 @@
-Fabric==1.6.0
-psycopg2==2.5
+Fabric==1.6.1
+psycopg2==2.5.1

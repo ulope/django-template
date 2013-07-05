@@ -1,7 +1,11 @@
+Unipath==1.0
+requests==1.2.3
+pytz==2013b
+
 Django<1.6
-South==0.7.6
-Unipath==0.2.1
-django-devserver==0.5.0
+South==0.8.1
+
+django-devserver==0.6.2
 django-extensions==1.1.1
-django-nose==1.1
-requests==1.2.0
+django-redis-cache==0.10.0
+pytest-django==2.3.0
