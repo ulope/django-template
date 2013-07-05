@@ -26,7 +26,6 @@ echo -e "\r - Successfully installed dependencies."
 
 chmod +x manage.py
 
-find . -type f -name ".keep" | xargs rm
 rm mkproject.sh
 rm README.rst
 

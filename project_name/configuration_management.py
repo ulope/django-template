@@ -54,8 +54,6 @@ class ConfigurationManager(object):
                     settings_path, traceback.format_exception(*sys.exc_info())
                 ))
 
-
-
     def _update_module_globals(self, source, target, merge=False):
         for attr in dir(source):
             if attr.upper() == attr:
